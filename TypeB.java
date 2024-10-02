@@ -1,6 +1,6 @@
 import java.util.*;
-class TypeB extends Thing{
-	int timeSinceLast;
+public class TypeB extends Thing{
+	protected int timeSinceLast;
 	public TypeB(int row, int column){
 		this.row=row;
 		this.col=column;

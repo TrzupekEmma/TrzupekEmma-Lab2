@@ -5,11 +5,13 @@ import java.util.*;
    * and, afterward, takes a step forward.  A TypeB Thing
    * only considers making a random turn every 10th round.
 */
-public class Thing {
+public abstract class Thing {
   // dir: 0=North, 1=East, 2=South, 3=West.
   // timeSinceLast: this is only important for "TypeB" Things.
-  public int  row, col, dir;
-  public char lab = 'r';
+  protected int row;
+  protected int col;
+  protected int dir;
+  protected char lab = 'r';
   //to be added to type 
   public void rightTurn() {
     this.dir = (this.dir + 1) % 4;
@@ -18,15 +20,10 @@ public class Thing {
   public void leftTurn() {
     this.dir = (this.dir + 3) % 4;
   }
-
-  public void maybeTurn(Random rand) {
-    int i = rand.nextInt(3);
-    if (i == 1) this.rightTurn();
-    if (i == 2) this.leftTurn();
-  }
+  public abstract void maybeTurn(Random rand);
   
   public String toString(){
-    return();
+	return(this.row + " " + this.col + " " + this.lab);
   }
   public void step() {
     final int[] dc = {

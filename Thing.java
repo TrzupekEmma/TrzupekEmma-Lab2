@@ -21,14 +21,13 @@ public class Thing {
 
   public void maybeTurn(Random rand) {
     int i = rand.nextInt(3);
-    if (i == 1) {
-      this.rightTurn();
-    }
-    if (i == 2) {
-      this.leftTurn();
-    }
+    if (i == 1) this.rightTurn();
+    if (i == 2) this.leftTurn();
   }
-
+  
+  public String toString(){
+    return();
+  }
   public void step() {
     final int[] dc = {
       0, 1, 0, -1

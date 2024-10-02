@@ -1,5 +1,5 @@
-import java.util.*;
 
+import java.util.*;
 public class DotChaser {
   public static Random rand = new Random(System.currentTimeMillis());
   /**
@@ -14,16 +14,6 @@ public class DotChaser {
   }
 
   // EEEEEK! STATIC METHODS!!! PLEASE FIND THEM A BETTER HOME.
-
-  public static void step(Thing t) {
-    final int[] dc = {
-      0, 1, 0, -1
-    }, dr = {
-      1, 0, -1, 0
-    };
-    t.row += dr[t.dir];
-    t.col += dc[t.dir];
-  }
 
   
   /**
@@ -77,8 +67,8 @@ public class DotChaser {
       // Move each thing.
       // (SEEMS LIKE A NICE MOVEALL() METHOD CALL WOULD WORK HERE)
       for( Node T = L; T != null; T = T.next ) {
-        maybeTurn(T.data);
-        step(T.data);
+        T.data.maybeTurn(rand);
+        T.data.step();
       }
       count++;
     }

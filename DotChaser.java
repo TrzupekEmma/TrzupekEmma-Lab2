@@ -35,20 +35,15 @@ public class DotChaser {
 
         // Add a typeA thing to the list.
         // (GEE, THAT'S A LOT OF CODE FOR JUST CREATING ONE THING)
-        Thing tA = new Thing();
-        tA.row = 45;
-        tA.col = 50;
+        TypeA tA = new TypeA(45,50);
         Node nA = new Node();
         nA.data = tA;
         nA.next = L;
         L       = nA;
 
         // Add a typeB thing to the list
-        Thing tB = new Thing();
-        tB.row     = 55;
-        tB.col     = 50;
+        TypeB tB = new TypeB(55,50);
         tB.lab     = 'b';
-        tB.isTypeB = true;
         Node nB = new Node();
         nB.data = tB;
         nB.next = L;

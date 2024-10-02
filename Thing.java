@@ -8,8 +8,7 @@ import java.util.*;
 public class Thing {
   // dir: 0=North, 1=East, 2=South, 3=West.
   // timeSinceLast: this is only important for "TypeB" Things.
-  public boolean isTypeB;
-  public int  row, col, dir,timeSinceLast;
+  public int  row, col, dir;
   public char lab = 'r';
   //to be added to type 
   public void rightTurn() {
@@ -22,29 +21,11 @@ public class Thing {
 
   public void maybeTurn(Random rand) {
     int i = rand.nextInt(3);
-
-    if (this.isTypeB) {
-      this.timeSinceLast++;
-
-      if (this.timeSinceLast == 10) {
-        this.timeSinceLast = 0;
-
-        if (i == 1) {
-          this.rightTurn();
-        }
-
-        if (i == 2) {
-          this.leftTurn();
-        }
-      }
-    } else   {
-      if (i == 1) {
-        this.rightTurn();
-      }
-
-      if (i == 2) {
-        this.leftTurn();
-      }
+    if (i == 1) {
+      this.rightTurn();
+    }
+    if (i == 2) {
+      this.leftTurn();
     }
   }
 

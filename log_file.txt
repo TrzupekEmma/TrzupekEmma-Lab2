@@ -1,0 +1,47 @@
+commit dfbed60439ac15e04d6fabfcdbfc9ec48e256064
+Author: TrzupekEmma <supertrzup17@hotmail.com>
+Date:   Wed Oct 2 21:43:31 2024 -0400
+
+    only needed files true final commit, has UML
+
+commit 6e923cba49359c9ad347d005a2c676d2bd7e96df
+Author: TrzupekEmma <supertrzup17@hotmail.com>
+Date:   Wed Oct 2 19:32:35 2024 -0400
+
+    all code complete still has .class
+
+commit 9f5f5b5c783fcfe6fd8f39178ba2bca0d8ebb0b7
+Author: TrzupekEmma <supertrzup17@hotmail.com>
+Date:   Wed Oct 2 16:39:48 2024 -0400
+
+    smoothed out issues with TypeA and TypeB
+
+commit 1f15f1f8248f1175fc01ebad9d655e47489abf6c
+Author: TrzupekEmma <supertrzup17@hotmail.com>
+Date:   Wed Oct 2 16:27:54 2024 -0400
+
+    added TypeA and TypeB
+
+commit a30255360adb4e7cb4387fc2ae8392e36b158ddb
+Author: TrzupekEmma <supertrzup17@hotmail.com>
+Date:   Wed Oct 2 16:15:54 2024 -0400
+
+    finished adding the thing class, no longer static but still has isTypeB
+
+commit 2bf556731c2c97d20cf2d2b122cc605f269ba48d
+Author: TrzupekEmma <supertrzup17@hotmail.com>
+Date:   Wed Oct 2 16:03:47 2024 -0400
+
+    started splitting everything out
+
+commit 7097c7f418a4ac715fcc6cecf0830e1cf996c0c9
+Author: TrzupekEmma <supertrzup17@hotmail.com>
+Date:   Wed Oct 2 15:53:01 2024 -0400
+
+    added all necessary files
+
+commit c8ecec282ab950a0c85b529a4c8b474abdcbb7da
+Author: TrzupekEmma <supertrzup17@hotmail.com>
+Date:   Wed Oct 2 15:41:12 2024 -0400
+
+    inital commit
